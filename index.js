@@ -15,7 +15,7 @@ const selectingDrivers = [returnFirstTwoDrivers, returnLastTwoDrivers];
 
 // higher order func takes int | returns func multiplying fare
 function createFareMultiplier(fare) {
-    return multiplyFare = function(n) {
+    return function(n) {
         return fare * n;
     }
 }
